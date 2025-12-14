@@ -1,227 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>AnimeHub – Erased</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<title>AnimeHub – Erased</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    * {
-      box-sizing: border-box;
-      font-family: system-ui, Arial, sans-serif;
-    }
+<style>
+* {
+  box-sizing: border-box;
+  font-family: system-ui, Arial, sans-serif;
+}
 
-    body {
-      margin: 0;
-      background: #0b0f19;
-      color: #e5e7eb;
-    }
+body {
+  margin: 0;
+  background: #0b0f19;
+  color: #e5e7eb;
+}
 
-    header {
-      background: #111827;
-      padding: 16px 32px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+header {
+  background: #111827;
+  padding: 14px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-    .logo {
-      font-size: 22px;
-      font-weight: bold;
-      color: #22c55e;
-    }
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #22c55e;
+}
 
-    main {
-      padding: 32px;
-      max-width: 1100px;
-      margin: auto;
-    }
+main {
+  max-width: 1100px;
+  margin: auto;
+  padding: 24px;
+}
 
-    .anime-hero {
-      display: grid;
-      grid-template-columns: 260px 1fr;
-      gap: 24px;
-    }
+.player {
+  background: #020617;
+  padding: 16px;
+  border-radius: 10px;
+}
 
-    .poster {
-      background: #1f2937;
-      height: 380px;
-      border-radius: 10px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #9ca3af;
-    }
+.video-wrap {
+  position: relative;
+  padding-top: 56.25%;
+  border-radius: 8px;
+  overflow: hidden;
+}
 
-    .details h1 {
-      margin: 0 0 10px;
-      font-size: 32px;
-    }
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
 
-    .details p {
-      color: #d1d5db;
-      line-height: 1.6;
-    }
+.player-bar {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-    .meta {
-      margin: 16px 0;
-      font-size: 14px;
-      color: #9ca3af;
-    }
+button {
+  background: #22c55e;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
 
-    h2 {
-      margin-top: 40px;
-      margin-bottom: 16px;
-    }
+button:disabled {
+  background: #374151;
+  cursor: not-allowed;
+}
 
-    /* PLAYER BAR */
-    .player-bar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: #111827;
-      padding: 12px 16px;
-      border-radius: 8px;
-      margin-bottom: 16px;
-      font-size: 14px;
-    }
+h2 {
+  margin-top: 30px;
+}
 
-    .player-bar button {
-      background: #22c55e;
-      border: none;
-      padding: 8px 14px;
-      border-radius: 6px;
-      cursor: pointer;
-      font-weight: 600;
-    }
+.episodes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 14px;
+}
 
-    /* EPISODES */
-    .episodes {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-      gap: 14px;
-    }
+.episode {
+  background: #111827;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
 
-    .episode {
-      background: #111827;
-      padding: 14px;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: transform 0.15s, background 0.15s;
-    }
+.episode.active {
+  outline: 2px solid #22c55e;
+}
 
-    .episode:hover {
-      transform: translateY(-4px);
-      background: #1f2937;
-    }
+footer {
+  margin-top: 50px;
+  padding: 20px;
+  text-align: center;
+  font-size: 13px;
+  color: #9ca3af;
+  background: #020617;
+}
 
-    .episode.active {
-      border: 2px solid #22c55e;
-      background: #1f2937;
-    }
-
-    .ep-number {
-      font-weight: bold;
-      margin-bottom: 6px;
-    }
-
-    footer {
-      margin-top: 60px;
-      padding: 20px;
-      text-align: center;
-      font-size: 13px;
-      color: #9ca3af;
-      background: #020617;
-    }
-  </style>
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+</style>
 </head>
+
 <body>
 
 <header>
   <div class="logo">AnimeHub</div>
-  <div>Anime • Series</div>
+  <div>Erased – Season 1</div>
 </header>
 
 <main>
-  <section class="anime-hero">
-    <div class="poster">Poster Image</div>
 
-    <div class="details">
-      <h1>Erased</h1>
-
-      <div class="meta">
-        TV • 12 Episodes • Mystery • Thriller • Time Travel
-      </div>
-
-      <p>
-        Satoru Fujinuma has the ability to go back in time before tragic events.
-        When a crime from his childhood resurfaces, he is sent 18 years into the
-        past to save lives and uncover the truth.
-      </p>
-    </div>
-  </section>
-
-  <h2>Episodes</h2>
-
-  <div class="player-bar">
-    <span id="currentEp">Currently selected: Episode 1</span>
-    <button id="nextBtn">▶ Next Episode</button>
+<div class="player">
+  <div class="video-wrap">
+    <iframe id="videoPlayer" allowfullscreen></iframe>
   </div>
 
-  <section class="episodes" id="episodeList"></section>
+  <div class="player-bar">
+    <span id="currentEpText">Episode 1</span>
+    <button id="nextBtn">▶ Next Episode</button>
+  </div>
+</div>
+
+<h2>Episodes</h2>
+<div class="episodes" id="episodeList"></div>
+
 </main>
 
 <footer>
-  This site is for educational/demo purposes only.  
-  All anime rights belong to their respective owners.
+  Educational demo only. Videos must be from official YouTube channels.
 </footer>
 
 <script>
-  const totalEpisodes = 12;
-  let currentEpisode = 1;
+/* ================= EPISODE DATA (FULL URLs) ================= */
 
-  const episodeList = document.getElementById("episodeList");
-  const currentEpText = document.getElementById("currentEp");
-  const nextBtn = document.getElementById("nextBtn");
+const episodes = [
+  { ep: 1, url: "https://anikai.to/watch/erased-7we2#ep=1" },
+  { ep: 2, url: "https://anikai.to/watch/erased-7we2#ep=2" },
+  { ep: 3, url: "https://anikai.to/watch/erased-7we2#ep=3" },
+  { ep: 4, url: "https://anikai.to/watch/erased-7we2#ep=4" },
+  { ep: 5, url: "https://anikai.to/watch/erased-7we2#ep=5" },
+  { ep: 6, url: "https://anikai.to/watch/erased-7we2#ep=6" },
+  { ep: 7, url: "https://anikai.to/watch/erased-7we2#ep=7" },
+  { ep: 8, url: "https://anikai.to/watch/erased-7we2#ep=8" },
+  { ep: 9, url: "https://anikai.to/watch/erased-7we2#ep=9" },
+  { ep: 10, url: "https://anikai.to/watch/erased-7we2#ep=10" },
+  { ep: 11, url: "https://anikai.to/watch/erased-7we2#ep=11" },
+  { ep: 12, url: "https://anikai.to/watch/erased-7we2#ep=12" }
+];
 
-  function renderEpisodes() {
-    episodeList.innerHTML = "";
+let currentEpisode = 1;
 
-    for (let i = 1; i <= totalEpisodes; i++) {
-      const ep = document.createElement("div");
-      ep.className = "episode";
-      if (i === currentEpisode) ep.classList.add("active");
+const videoPlayer = document.getElementById("videoPlayer");
+const episodeList = document.getElementById("episodeList");
+const nextBtn = document.getElementById("nextBtn");
+const currentEpText = document.getElementById("currentEpText");
 
-      ep.innerHTML = `
-        <div class="ep-number">Episode ${i}</div>
-        Click to select
-      `;
+/* ================= HELPERS ================= */
 
-      ep.addEventListener("click", () => {
-        selectEpisode(i);
-      });
+// Convert FULL YouTube URL → embed URL
+function toEmbedUrl(fullUrl) {
+  const u = new URL(fullUrl);
+  const id = u.searchParams.get("v");
+  return `https://anikai.to/embed/${id}`;
+}
 
-      episodeList.appendChild(ep);
-    }
+/* ================= CORE LOGIC ================= */
 
-    currentEpText.textContent =
-      "Currently selected: Episode " + currentEpisode;
-  }
+function loadEpisode(epNumber) {
+  const ep = episodes[epNumber - 1];
+  if (!ep) return;
 
-  function selectEpisode(epNumber) {
-    currentEpisode = epNumber;
-    renderEpisodes();
-  }
+  currentEpisode = epNumber;
+  videoPlayer.src = toEmbedUrl(ep.url);
+  currentEpText.textContent = `Episode ${ep.ep}`;
 
-  nextBtn.addEventListener("click", () => {
-    if (currentEpisode < totalEpisodes) {
-      currentEpisode++;
-      renderEpisodes();
-    }
-  });
-
+  nextBtn.disabled = epNumber === episodes.length;
   renderEpisodes();
+}
+
+function renderEpisodes() {
+  episodeList.innerHTML = "";
+
+  episodes.forEach(e => {
+    const div = document.createElement("div");
+    div.className = "episode" + (e.ep === currentEpisode ? " active" : "");
+    div.textContent = "Episode " + e.ep;
+    div.onclick = () => loadEpisode(e.ep);
+    episodeList.appendChild(div);
+  });
+}
+
+/* ================= EVENTS ================= */
+
+nextBtn.onclick = () => {
+  if (currentEpisode < episodes.length) {
+    loadEpisode(currentEpisode + 1);
+  }
+};
+
+/* ================= INIT ================= */
+
+loadEpisode(1);
 </script>
 
 </body>
 </html>
+
