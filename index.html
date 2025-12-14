@@ -1,52 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Smart Calculator</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BlockPlay</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <header>
-    <h1>Smart Calculator</h1>
+
+  <header class="navbar">
+    <div class="logo">BlockPlay</div>
+    <nav>
+      <a href="#">Discover</a>
+      <a href="#">Create</a>
+      <a href="#">Community</a>
+      <a href="#">Shop</a>
+    </nav>
+    <button class="login-btn">Log In</button>
   </header>
 
   <main>
-    <div class="calculator">
-      <input type="text" id="display" disabled>
+    <section class="hero">
+      <h1>Play. Build. Share.</h1>
+      <p>Create games and explore worlds made by players.</p>
+    </section>
 
-      <div class="buttons">
-        <button class="btn clear">C</button>
-        <button class="btn">%</button>
-        <button class="btn">√</button>
-        <button class="btn operator">÷</button>
-
-        <button class="btn">7</button>
-        <button class="btn">8</button>
-        <button class="btn">9</button>
-        <button class="btn operator">×</button>
-
-        <button class="btn">4</button>
-        <button class="btn">5</button>
-        <button class="btn">6</button>
-        <button class="btn operator">-</button>
-
-        <button class="btn">1</button>
-        <button class="btn">2</button>
-        <button class="btn">3</button>
-        <button class="btn operator">+</button>
-
-        <button class="btn">0</button>
-        <button class="btn">.</button>
-        <button class="btn equal">=</button>
+    <section class="games">
+      <h2>Popular Experiences</h2>
+      <div class="grid">
+        <div class="card">Adventure Zone</div>
+        <div class="card">Block Racing</div>
+        <div class="card">Survival Arena</div>
+        <div class="card">City Builder</div>
+        <div class="card">Tower Escape</div>
+        <div class="card">Space Wars</div>
       </div>
-    </div>
+    </section>
   </main>
 
-  <footer>
-    <p>© 2025 Smart Calculator. Built for educational purposes.</p>
-  </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
+
