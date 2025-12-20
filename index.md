@@ -5,6 +5,7 @@
 - [Divisions](divisions.md)
 - [Archived Records](records.md)
 - [Terminology Reference](terminology.md)
+- [Affiliation and Role Consideration](affiliation.md)
 
 
 This archive contains publicly accessible documentation related to the Yumic Organization.
