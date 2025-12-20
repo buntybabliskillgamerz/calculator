@@ -1,4 +1,7 @@
 # Affiliation and Internal Roles
+← [Return to Archive Index](index.md)
+
+
 - [Rank Structure and Authority](Ranks.md)
 
 
@@ -44,5 +47,6 @@ Public documentation does not disclose:
 - Role-specific authority limits
 
 This omission is intentional.
+
 
 
