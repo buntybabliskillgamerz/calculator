@@ -1,4 +1,6 @@
 # Affiliation and Internal Roles
+- [Rank Structure and Authority](rank.md)
+
 
 This document outlines publicly accessible information regarding affiliation with the Yumic Organization.
 
@@ -42,3 +44,4 @@ Public documentation does not disclose:
 - Role-specific authority limits
 
 This omission is intentional.
+
