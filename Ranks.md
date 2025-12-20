@@ -1,4 +1,6 @@
 ## Rank Structure and Authority
+← [Return to Archive Index](index.md)
+
 
 The Yumic Organization operates under a tiered rank framework designed to distribute responsibility without centralizing identity.
 
@@ -132,3 +134,4 @@ This protocol is permanent.
 Rank descriptions contained within this archive reflect documented structure rather than real-time status.
 
 Access to this information does not imply eligibility, assignment, or affiliation.
+
