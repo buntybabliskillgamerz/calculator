@@ -1,4 +1,5 @@
 # Divisions of the Yumic Organization
+← [Return to Archive Index](index.md)
 
 This document provides a detailed overview of the internal divisions of the Yumic Organization. All descriptions are archival and informational in nature. The purpose of this document is to record organizational structure, functional separation, and systemic responsibilities without issuing directives or implying real-time operational authority.
 
