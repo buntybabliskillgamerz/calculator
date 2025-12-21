@@ -1,4 +1,5 @@
 # Terminology and Classification Reference — Yumic Organization
+← [Return to Archive Index](index.md)
 
 This document defines standardized terminology used across publicly accessible Yumic Organization records. Each term reflects distinct usage observed in archival material. Definitions emphasize purpose, scope, and limitation without directive intent.
 
