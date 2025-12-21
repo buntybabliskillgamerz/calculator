@@ -1,4 +1,5 @@
 # Overview of the Yumic Organization
+← [Return to Archive Index](index.md)
 
 This document provides a comprehensive overview of the Yumic Organization as recorded in publicly accessible documentation. It is intended to describe structure, philosophy, and systemic behavior without issuing instruction or directive intent. The Yumic Organization is presented here as a documented system rather than an entity defined by individuals.
 
