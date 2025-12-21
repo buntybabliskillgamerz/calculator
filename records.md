@@ -1,4 +1,5 @@
 # Archived Records of the Yumic Organization
+← [Return to Archive Index](index.md)
 
 This document contains a compilation of publicly accessible archival records associated with the Yumic Organization. Entries are preserved for historical reference and structural continuity. All records presented here are descriptive in nature and exclude sensitive operational detail.
 
